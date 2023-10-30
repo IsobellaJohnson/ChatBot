@@ -1,21 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background: #eedbdb;
+  background: #FFAEBC
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #eedbdb;
-
+  background: #FF9AD2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,10 +28,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   -ms-overflow-style: none;
   scrollbar-width: none;
-
   padding-bottom: 20px;
   scroll-behavior: smooth;
 }
@@ -47,16 +43,19 @@ body {
   width: 100%;
   padding: 15px;
 }
+.title{
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+}
 
 .ai {
-  background: #a1a3b8;
+  background: #FF67BB;
 }
 
 .chat {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -67,16 +66,14 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 5px;
-
-  background: #5436DA;
-
+  background: #FFCEE9;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ai .profile {
-  background: #10a37f;
+
 }
 
 .profile img {
@@ -91,7 +88,6 @@ body {
   font-size: 20px;
   max-width: 100%;
   overflow-x: scroll;
-
   /*
    * white space refers to any spaces, tabs, or newline characters that are used to format the CSS code
    * specifies how white space within an element should be handled. It is similar to the "pre" value, which tells the browser to treat all white space as significant and to preserve it exactly as it appears in the source code.
@@ -99,7 +95,6 @@ body {
    * The default value for the white-space property in CSS is "normal". This tells the browser to collapse multiple white space characters into a single space, and to wrap text onto multiple lines as needed to fit within its container.
   */
   white-space: pre-wrap; 
-
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -114,7 +109,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #b8226d;
+  background: #FFCEE9;
 
   display: flex;
   flex-direction: row;
