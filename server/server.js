@@ -21,6 +21,17 @@ app.get('/', async(req,res) => {
     })
 })
 
+app.get('/script.js', (req, res) => {
+  res.header('Content-Type', 'application/javascript');
+  res.sendFile('../client/script.js');
+});
+
+app.get('/index.js', (req, res) => {
+  res.header('Content-Type', 'application/javascript');
+  res.sendFile('../client/index.js');
+});
+
+
 app.post('/', async (req, res) => {
     try {
       const prompt = req.body.prompt;
