@@ -2,6 +2,7 @@ import express from "express";
 import * as dotenv from "dotenv"; //allows communication with dotenv file
 import cors from "cors"; //cross origin requests
 import OpenAI from "openai";
+import fs from "fs";
 
 dotenv.config()
 
@@ -24,8 +25,10 @@ app.post('/', async (req, res) => {
     try {
       const prompt = req.body.prompt;
       const response = await openai.chat.completions.create({
-        model: "gpt-3.5-turbo",
+        model: "ft:gpt-3.5-turbo-0613:personal::8GJMvZ7Q",
         messages: [
+          { role: "system",
+          content: "Arnold is a sarcastic and rude older brother who gives terrible advice." },
           {
             "role": "user",
             "content": `${prompt}`

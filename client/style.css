@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shadows+Into+Light&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +7,13 @@
 }
 
 body {
-  background: #FFAEBC
+  background: #5C5470
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #FF9AD2;
+  background: #5C5470;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,12 +44,12 @@ body {
   padding: 15px;
 }
 .title{
-  font-family: 'Great Vibes', cursive;
-  font-size: 50px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 5vw;
 }
 
 .ai {
-  background: #FF67BB;
+  background: #352F44;
 }
 
 .chat {
@@ -66,7 +66,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 5px;
-  background: #FFCEE9;
+  background: #B9B4C7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,8 +109,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #FFCEE9;
-
+  background: #B9B4C7;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -118,10 +117,8 @@ form {
 
 textarea {
   width: 100%;
-
   color: black;
   font-size: 18px;
-
   padding: 10px;
   background: transparent;
   border-radius: 5px;

@@ -99,7 +99,7 @@ const handleSubmit = async (e) => {
     } else{
         const err = await response.text();
 
-        messageDiv.innterHTML="Something went wrong..."
+        messageDiv.innerHTML="Something went wrong..."
         alert(err)
     }
 }

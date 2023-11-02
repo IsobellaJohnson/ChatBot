@@ -2,20 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="assets/bot.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chatbot AI</title>
+    <title>Hey Arnold!</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="app">
-      <div class="header"><h1 class="title">DearAbby.ai</h1></div>
+      <div class="header">
+        <h1 class="title">Hey Arnold!</h1>
+                <span class="info-icon" onclick="toggleInfo()">ℹ️</span>
+      </div>
+      <div class="info-content">
+        This is the website of Arnold, your rude older brother who gives terrible advice.
+      </div>
       <div id="chat_container"></div>
       <form>
-        <textarea name="prompt" rows="1" cols="1" placeholder="How can I help you today? 💗"></textarea>
+        <textarea name="prompt" rows="1" cols="1" placeholder="Ask away, but don't expect any useful advice..."></textarea>
         <button type="submit"><img src="assets/send.svg" alt="send" /></button>
       </form>
     </div>
     <script type="module" src="/script.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
