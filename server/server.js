@@ -23,12 +23,14 @@ app.get('/', async(req,res) => {
 
 app.get('/script.js', (req, res) => {
   res.header('Content-Type', 'application/javascript');
-  res.sendFile('../client/script.js');
+  const filePath = path.join(__dirname, '../client/script.js');
+  res.sendFile(filePath);
 });
 
 app.get('/index.js', (req, res) => {
   res.header('Content-Type', 'application/javascript');
-  res.sendFile('../client/index.js');
+  const filePath = path.join(__dirname, '../client/index.js'); 
+  res.sendFile(filePath);
 });
 
 
