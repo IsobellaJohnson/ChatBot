@@ -10,16 +10,16 @@
   <body>
     <div id="app">
       <div class="header">
-        <h1 class="title">Hey Arnold!</h1>
-                <span class="info-icon" onclick="toggleInfo()">ℹ️</span>
+        <h1 class="title">Hey Arnold! </h1>
+        <span class="info-icon" onclick="toggleInfo()"><img src="assets/info.svg" alt=""></span>
       </div>
       <div class="info-content">
-        This is the website of Arnold, your rude older brother who gives terrible advice.
+        This is the website of Arnold, a rude chatbot who gives terrible advice. <br/> <span class="note"><b>Note:</b> Please don't take any of this advice seriously...</span>
       </div>
       <div id="chat_container"></div>
       <form>
         <textarea name="prompt" rows="1" cols="1" placeholder="Ask away, but don't expect any useful advice..."></textarea>
-        <button type="submit"><img src="assets/send.svg" alt="send" /></button>
+        <button type="submit"><img src="assets/send.svg" alt="send"/></button>
       </form>
     </div>
     <script type="module" src="/script.js"></script>
